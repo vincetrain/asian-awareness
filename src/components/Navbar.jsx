@@ -1,20 +1,21 @@
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo.svg";
 import "./Navbar.css";
 import React from "react";
+import { Link } from "react-router-dom"
 
 function Navbar() {
     return(
         <div id="navbar">
-            <a href="/">
+            <Link className="navBrand" to="/">
                 <span className="centerer"></span>
                 <img src={Logo} alt="Asian Awareness" />
-            </a>
-            <ul className="navItems">
-                <li><a href="/">Home</a></li>
-                <li><a href="Summary">Summary</a></li>
-                <li><a href="History">History</a></li>
-                <li><a href="Resources">Resources</a></li>
-                <li><a href="Help">How to Help</a></li>
+            </Link>
+            <ul className="navList">
+                <Link className="navItem" to="/">Home</Link>
+                <Link className="navItem" to="/Summary">Summary</Link>
+                <Link className="navItem" to="/History">History</Link>
+                <Link className="navItem" to="/Resources">Resources</Link>
+                <Link className="navItem" to="/Help">How to Help</Link>
             </ul>
         </div>
     )

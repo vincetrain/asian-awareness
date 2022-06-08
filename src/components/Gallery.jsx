@@ -20,7 +20,7 @@ class Gallery extends Component {
         })
     }
     componentDidMount() {
-        this.interval = setInterval(() => this.changeIndex(), 6000);
+        this.interval = setInterval(() => this.changeIndex(), 4000);
       }
     componentWillUnmount() {
         clearInterval(this.interval);

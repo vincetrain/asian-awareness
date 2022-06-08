@@ -5,10 +5,12 @@
 }
 
 .homeText h1 {
+    color: #000000;
     font-size: 4vw;
     line-height: 40%;
 }
 
 .homeText p {
+    color: #2f2f2f;
     font-size: 1vw;
 }

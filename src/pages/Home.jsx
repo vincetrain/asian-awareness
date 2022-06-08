@@ -7,7 +7,7 @@ function Home() {
         <div>
             <Gallery />
             <div className="homeText">
-                <h1>Anti Asian Hate</h1>
+                <h1>Anti-Asian Hate</h1>
                 <p>2022's newest epidemic.</p>
             </div>
         </div>
