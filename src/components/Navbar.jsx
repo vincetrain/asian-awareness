@@ -1,20 +1,20 @@
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/logo.png";
 import "./Navbar.css";
 import React from "react";
 
 function Navbar() {
     return(
         <div id="navbar">
-            <a href=".">
+            <a href="/">
                 <span className="centerer"></span>
                 <img src={Logo} alt="Asian Awareness" />
             </a>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#summary">Summary</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="#help">How to Help</a></li>
+            <ul className="navItems">
+                <li><a href="/">Home</a></li>
+                <li><a href="Summary">Summary</a></li>
+                <li><a href="History">History</a></li>
+                <li><a href="Resources">Resources</a></li>
+                <li><a href="Help">How to Help</a></li>
             </ul>
         </div>
     )
