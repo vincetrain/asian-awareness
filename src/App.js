@@ -1,4 +1,4 @@
-import "./stylesheet.css";
+import "./styles.css";
 
 import Navbar from "./components/Navbar.jsx";
 
