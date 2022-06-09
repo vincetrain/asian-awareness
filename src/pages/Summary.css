@@ -1,5 +1,10 @@
-.wrapper {
+.summary {
     margin-top: 15%;
+    width: 60%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 7%;
 }
 
 .info1 {
@@ -7,19 +12,24 @@
 }
 
 .info1 img {
+    margin-top: 3%;
     object-fit: cover;
     margin-right: 1vw;
-    height: 20vw;
-    width: 20vw;
-
+    height: 35vw;
+    width: 35vw;
+    z-index: -1;
     filter: grayscale(50%);
 }
 
-.wrapper h2 {
-    font-size: 1.25vw;
+.info2 {
+    padding-bottom: 5vw;
 }
 
-.wrapper p {
+.summary h2 {
+    font-size: 1.6vw;
+}
+
+.summary p {
     font-size: 0.8vw;
-    line-height: 1.1vw;
+    line-height: 1.2vw;
 }

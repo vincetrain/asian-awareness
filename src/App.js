@@ -16,13 +16,13 @@ function Content() {
     return(
         <div>
             <SwitchTransition>
-                <CSSTransition key={location.pathname} classNames="fade" timeout={400}>
+                <CSSTransition key={location.pathname} classNames="fade" timeout={100}>
                     <Routes location={location}>
                         <Route exact path="/" element={<Home />} />
                         <Route path="/Summary" element={<Summary />} />
-                        <Route path="/History" element={<Home />} />
-                        <Route path="/Resources" element={<Home />} />
-                        <Route path="/Help" element={<Home />} />
+                        <Route path="/History" element={<History />} />
+                        <Route path="/Resources" element={<Resources />} />
+                        <Route path="/Help" element={<Help />} />
                     </Routes>
                 </CSSTransition>
             </SwitchTransition>
@@ -34,7 +34,7 @@ function Content() {
 
 function App() {
     return (
-        <div>
+        <div className="content-container">
             <Navbar />
             <Content />
         </div>

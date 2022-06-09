@@ -1,14 +1,28 @@
-import Logo from "../assets/logo.svg";
+import Logo from "../components/Logo.jsx";
 import "./Navbar.css";
 import React from "react";
 import { Link } from "react-router-dom"
+import { useState, useRef } from "react";
 
 function Navbar() {
+    const [fix, setFix] = useState(false);
+
+    function setFixed() {
+        if (window.scrollY > 1) {
+            setFix(true);
+        }
+        else {
+            setFix(false);
+        }
+    }
+
+    window.addEventListener("scroll", setFixed);
+
     return(
-        <div id="navbar">
+        <div id="navbar" className= {fix ? "navbar fixed" : "navbar"}>
             <Link className="navBrand" to="/">
                 <span className="centerer"></span>
-                <img src={Logo} alt="Asian Awareness" />
+                <Logo />
             </Link>
             <ul className="navList">
                 <Link className="navItem" to="/">Home</Link>

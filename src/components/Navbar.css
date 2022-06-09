@@ -1,32 +1,42 @@
 /* TODO:　FIX NAVBAR SPACING BETWEEN BRAND AND UL */
 
 #navbar {
-    height: 4vw;
-    padding: 1vh;
+    height: 9vh;
+    top: 0;
     display: flex;
-    justify-content: center;
+    position: fixed;
     font-family: Roboto;
     font-size: 0.6vw;
+    width: 100%;
+    background-color: white;
+}
+
+.navList {
+    margin-left: auto;
+    margin-right: 5vh;
+    margin-top: 3.5vh;
 }
 
 .navItem {
     display: inline-flex;
-    padding: 1vw 1vw;
+    padding: 0 1vw;
     text-decoration: none;
     color: black;
+
 }
 
-img {
+.navBrand img {
     height: 1.4vw;
     vertical-align: middle;
-}
-
-.centerer {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+    margin-left: 5vh;
 }
 
 .navBrand:hover, .navItem:hover {
-    filter: invert(45%);
+    filter: invert(40%);
+    transition: 150ms ease-in-out;
+}
+
+.navbar.fixed {
+    box-shadow: black 5px 3px 16px;
+    transition: 300ms ease-in-out;
 }

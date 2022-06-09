@@ -1,0 +1,29 @@
+.footer {
+    padding-top: 1vh;
+    margin: 0 5vh; 
+    bottom: 0;
+    margin-top: auto;
+}
+
+.footer img {
+    padding: 1.5vh 0;
+    height: 5vw;
+}
+
+.quote {
+    width: 25%;
+    float: right;
+}
+
+.hashtags {
+    margin-top: -0.6vh;
+    padding-bottom: 1.2vh;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.hashtags li {
+    display: inline-flex;
+    padding-right: 1vw;
+    color: black;
+}
