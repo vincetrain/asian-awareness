@@ -5,8 +5,8 @@ import img1 from "../pics/04.jpg"
 
 function Summary() {
     return (
-        <div>
-            <div className="summary">
+        <div className="wrapper">
+            <div className="info1">
                 <img src={img1}></img>
                 <div className="summaryText">
                     <h2>What is Anti-Asian Hate?</h2>
@@ -19,13 +19,23 @@ function Summary() {
                         descent, or even people who just “look Chinese”, resulting in a worldwide 
                         xenophobia of the AAPI community. This unrightful hate and blame placed 
                         upon these people have resulted in many instances of harm against innocent 
-                        people, either associated or part of this community. Due to this, many 
-                        people of Asian descent have been targeted in many hate-crimes, resulting 
-                        in job losses, dissociation/avoidance, bullying, and even deaths. 
+                        people, either associated or part of this community.
                     </p>
                 </div>
             </div>
 
+            <div className="info2">
+                <h2>The Effects of Xenophobia Against the Asian Voice.</h2>
+                <p>
+                    As stated before, the rise of worldwide xenophobia against the Asian community is heavily 
+                    damaging many innocent lives. Because of this increase of hate, 
+                    members of the Asian community are having their voices silenced, having less say in their workplaces,
+                    being denied services, being avoided, and more, all due to their race or ethnicity. When taking into 
+                    consideration the horrible state of misogynistic, prejudical, transphobic, and homophobic behaviours in 
+                    today's society, those who not only are Asian but identify within many other minority communities experience
+                    even more restrictions on their voices and privileges. 
+                </p>
+            </div>
 
         </div>
     )

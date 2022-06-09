@@ -9,14 +9,14 @@ import Resources from "./pages/Resources.jsx";
 import Help from "./pages/Help.jsx";
 
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import { CSSTransition, SwitchTransition } from 'react-transition-group'
 
 function Content() {
     let location = useLocation();
     return(
         <div>
-            <TransitionGroup>
-                <CSSTransition key={location.pathname} classNames="fade" timeout={300}>
+            <SwitchTransition>
+                <CSSTransition key={location.pathname} classNames="fade" timeout={400}>
                     <Routes location={location}>
                         <Route exact path="/" element={<Home />} />
                         <Route path="/Summary" element={<Summary />} />
@@ -25,7 +25,7 @@ function Content() {
                         <Route path="/Help" element={<Home />} />
                     </Routes>
                 </CSSTransition>
-            </TransitionGroup>
+            </SwitchTransition>
         </div>
     )
 
