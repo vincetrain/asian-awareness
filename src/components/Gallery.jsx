@@ -1,42 +1,48 @@
-import React, { Component } from 'react';
 import "./Gallery.css";
 
-import img1 from "../pics/01.jpg";
-import img2 from "../pics/02.jpg";
-import img3 from "../pics/03.jpg";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import React, { useEffect, useState } from 'react';
 
-class Gallery extends Component {
-    state = {
-        index: 0,
-        picList: [img1, img2, img3]
+var interval = null;
+
+/**
+ * 
+ * 
+ * @param {*} props 
+ * @returns div containing gallery element
+ */
+function Gallery(props) {
+    const [index, setIndex] = useState(0);
+    const picList = props.picList;
+    const time = props.interval;
+
+    /**
+     * Changes index to iterate between picList
+     */
+    function changeIndex() {
+        setIndex((index+1)%picList.length)
     }
-    compareIndex(i) { 
-        i++
-        return i%this.state.picList.length;
-    }
-    changeIndex() {
-        this.setState({
-            index: this.compareIndex(this.state.index)
-        })
-    }
-    componentDidMount() {
-        this.interval = setInterval(() => this.changeIndex(), 6000);
-      }
-    componentWillUnmount() {
-        clearInterval(this.interval);
-    }
-    render () {
-        return (
-            <div className="gallery">
-                <TransitionGroup>
-                    <CSSTransition key={this.state.index} classNames="slide" timeout={400}>
-                        <img src={this.state.picList[this.state.index]} />
-                    </CSSTransition>
-                </TransitionGroup>
-            </div>
-        )
-    }
+
+    // Sets timeout everytime component is updated (when images switch)
+    interval = setTimeout( function() {changeIndex()}, time);
+
+    // Clears timeout when unloaded.
+    useEffect(() => {
+        return() => {
+            clearTimeout(interval)
+            interval = null;
+        };
+    }, []);
+
+    return (
+        <div className="gallery">
+            <TransitionGroup>
+                <CSSTransition key={index} classNames="slide" timeout={400}>
+                    <img src={picList[index]} />
+                </CSSTransition>
+            </TransitionGroup>
+        </div>
+    )
 }
 
 export default Gallery;

@@ -1,23 +1,33 @@
 .footer {
-    padding-top: 1vh;
-    margin: 0 5vh; 
-    bottom: 0;
-    margin-top: auto;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    font-size: 0.9vw;
 }
 
-.footer img {
+.footerContent img {
+    /* margin-top: 1vw; */
+    margin-left: 5vh;
     padding: 1.5vh 0;
     height: 5vw;
+    filter: invert(100%);
 }
 
 .quote {
-    width: 25%;
+    margin-top: 0.25vw;
+    margin-right: 5vh;
+    max-width: 25%;
     float: right;
+    color: white;
 }
 
 .hashtags {
+    margin: 0 5vh;
     margin-top: -0.6vh;
-    padding-bottom: 1.2vh;
+    padding-bottom: 1.4vh;
     padding-left: 0px;
     list-style: none;
 }
@@ -25,5 +35,5 @@
 .hashtags li {
     display: inline-flex;
     padding-right: 1vw;
-    color: black;
+    color: white;
 }

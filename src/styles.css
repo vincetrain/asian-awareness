@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0 0;
     margin-top: 9vh;
@@ -19,35 +23,12 @@ body {
 }
 .fade-enter.fade-enter-active {
     opacity: 1;
-    transition: opacity 100ms ease-in;
+    transition: opacity 500ms ease-in;
 }
 .fade-exit {
     opacity: 1;
 }
 .fade-exit.fade-exit-active {
     opacity: 0;
-    transition: opacity 100ms ease-out;
+    transition: opacity 500ms ease-out;
 }
-
-/* .content-bg {
-    height: 100vh;
-    width: 70%;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    z-index: -1;
-    position: absolute;
-    background-color: white;
-} */
-
-/* body:before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    z-index: -2;
-    background-image: url(./pics/bg.jpg);
-    filter: grayscale(100%) blur(10px) brightness(60%);
-    box-shadow: 0 0 5px 20px #555;
-} */

@@ -1,8 +1,6 @@
 import "./Summary.css"
 
 import img1 from "../pics/04.jpg"
-import Footer from "../components/Footer.jsx"
-
 
 function Summary() {
     return (
@@ -41,7 +39,6 @@ function Summary() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

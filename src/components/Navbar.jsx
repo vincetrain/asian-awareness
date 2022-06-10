@@ -5,21 +5,21 @@ import { Link } from "react-router-dom"
 import { useState, useRef } from "react";
 
 function Navbar() {
-    const [fix, setFix] = useState(false);
+    const [shadow, giveShadow] = useState(false);
 
-    function setFixed() {
+    function setState() {
         if (window.scrollY > 1) {
-            setFix(true);
+            giveShadow(true);
         }
         else {
-            setFix(false);
+            giveShadow(false);
         }
     }
 
-    window.addEventListener("scroll", setFixed);
+    window.addEventListener("scroll", setState);
 
     return(
-        <div id="navbar" className= {fix ? "navbar fixed" : "navbar"}>
+        <div id="navbar" className= {shadow ? "navbar shadow" : "navbar"}>
             <Link className="navBrand" to="/">
                 <span className="centerer"></span>
                 <Logo />

@@ -6,9 +6,10 @@
     display: flex;
     position: fixed;
     font-family: Roboto;
-    font-size: 0.6vw;
+    font-size: 1.3vh;
     width: 100%;
     background-color: white;
+    z-index: 9999;
 }
 
 .navList {
@@ -21,12 +22,11 @@
     display: inline-flex;
     padding: 0 1vw;
     text-decoration: none;
-    color: black;
-
+    color: black;   
 }
 
 .navBrand img {
-    height: 1.4vw;
+    height: 3vh;
     vertical-align: middle;
     margin-left: 5vh;
 }
@@ -36,7 +36,7 @@
     transition: 150ms ease-in-out;
 }
 
-.navbar.fixed {
+.navbar.shadow {
     box-shadow: black 5px 3px 16px;
     transition: 300ms ease-in-out;
 }

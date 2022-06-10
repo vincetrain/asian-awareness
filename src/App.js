@@ -1,6 +1,8 @@
 import "./styles.css";
 
 import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
+
 
 import Home from "./pages/Home.jsx";
 import Summary from "./pages/Summary.jsx";
@@ -14,9 +16,9 @@ import { CSSTransition, SwitchTransition } from 'react-transition-group'
 function Content() {
     let location = useLocation();
     return(
-        <div>
+        <div className="container">
             <SwitchTransition>
-                <CSSTransition key={location.pathname} classNames="fade" timeout={100}>
+                <CSSTransition key={location.pathname} classNames="fade" timeout={500}>
                     <Routes location={location}>
                         <Route exact path="/" element={<Home />} />
                         <Route path="/Summary" element={<Summary />} />
@@ -37,6 +39,7 @@ function App() {
         <div className="content-container">
             <Navbar />
             <Content />
+            <Footer />
         </div>
     )
 }
