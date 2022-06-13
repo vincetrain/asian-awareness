@@ -1,6 +1,6 @@
 /* TODO:　FIX NAVBAR SPACING BETWEEN BRAND AND UL */
 
-#navbar {
+.navbar {
     height: 9vh;
     top: 0;
     display: flex;
@@ -10,6 +10,7 @@
     width: 100%;
     background-color: white;
     z-index: 9999;
+    border-bottom: 1px solid gray;
 }
 
 .navList {

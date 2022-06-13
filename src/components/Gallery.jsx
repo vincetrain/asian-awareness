@@ -1,7 +1,7 @@
 import "./Gallery.css";
 
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 var interval = null;
 
@@ -24,14 +24,19 @@ function Gallery(props) {
     }
 
     // Sets timeout everytime component is updated (when images switch)
-    interval = setTimeout( function() {changeIndex()}, time);
-
+    interval = setTimeout( function() {changeIndex();}, time);
+    const firstUpdate = useRef(true);
     // Clears timeout when unloaded.
     useEffect(() => {
-        return() => {
-            clearTimeout(interval)
-            interval = null;
-        };
+        if (firstUpdate.current) {
+            firstUpdate.current = false;
+        }
+        else {
+            return() => {
+                clearTimeout(interval)
+                interval = null;
+            };
+        }
     }, []);
 
     return (

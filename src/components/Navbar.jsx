@@ -19,14 +19,14 @@ function Navbar() {
     window.addEventListener("scroll", setState);
 
     return(
-        <div id="navbar" className= {shadow ? "navbar shadow" : "navbar"}>
+        <div className="navbar" className= {shadow ? "navbar shadow" : "navbar"}>
             <Link className="navBrand" to="/">
                 <span className="centerer"></span>
                 <Logo />
             </Link>
             <ul className="navList">
                 <Link className="navItem" to="/">Home</Link>
-                <Link className="navItem" to="/Summary">Summary</Link>
+                <Link className="navItem" to="/About">About</Link>
                 <Link className="navItem" to="/History">History</Link>
                 <Link className="navItem" to="/Resources">Resources</Link>
                 <Link className="navItem" to="/Help">How to Help</Link>

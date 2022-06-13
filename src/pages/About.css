@@ -1,0 +1,38 @@
+.wrapper {
+    margin-bottom: 10%;
+}
+
+.wrapper h2 {
+    font-size: 3vw;
+}
+
+.text p {
+    font-size: 1vw;
+    line-height: 2vw;
+}
+
+.about-info-wrapper {
+    align-items: center;
+    width: 65%;
+    margin: auto;
+}
+
+#about-info1 {
+    margin-top: 15vh;
+    display: flex;
+}
+
+#about-info1 img {
+    margin-top: 3%;
+    object-fit: cover;
+    margin-right: 1vw;
+    height: 35vw;
+    width: 35vw;
+    filter: grayscale(50%);;
+    margin-bottom: 5vh;
+}
+
+#about-info2 {
+    text-align: left;
+}
+

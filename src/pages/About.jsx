@@ -1,13 +1,14 @@
-import "./Summary.css"
+import "./About.css"
 
 import img1 from "../pics/04.jpg"
+import img2 from "../pics/05.jpg"
 
 function Summary() {
     return (
-        <div>
-            <div className="summary">
-                <div className="info1">
-                    <img src={img1}></img>
+        <div className="wrapper">
+            <div className="about-info-wrapper">
+                <div id="about-info1">
+                    <img src={img1} />
                     <div className="text">
                         <h2>What is Anti-Asian Hate?</h2>
                         <p>
@@ -21,6 +22,11 @@ function Summary() {
                             upon these people have resulted in many instances of harm against innocent 
                             people, either associated or part of this community.
                         </p>
+                    </div>
+                </div>
+
+                <div id="about-info2">
+                    <div className="text">
                         <h2>The Effects of Xenophobia Against the Asian Voice.</h2>
                         <p>
                             As stated before, the rise of worldwide xenophobia against the Asian community is heavily 
@@ -33,13 +39,9 @@ function Summary() {
                         </p>
                     </div>
                 </div>
-                <div className="info2">
-                    <div className="text">
-
-                    </div>
-                </div>
             </div>
         </div>
+
     )
 }
 
