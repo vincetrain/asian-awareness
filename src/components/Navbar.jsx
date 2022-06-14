@@ -27,7 +27,7 @@ function Navbar() {
             <ul className="navList">
                 <Link className="navItem" to="/">Home</Link>
                 <Link className="navItem" to="/About">About</Link>
-                <Link className="navItem" to="/History">History</Link>
+                <Link className="navItem" to="/Educate">Educate</Link>
                 <Link className="navItem" to="/Resources">Resources</Link>
                 <Link className="navItem" to="/Help">How to Help</Link>
             </ul>

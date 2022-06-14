@@ -6,7 +6,7 @@ import Footer from "./components/Footer.jsx";
 
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
-import History from "./pages/History.jsx";
+import Educate from "./pages/Educate.jsx";
 import Resources from "./pages/Resources.jsx";
 import Help from "./pages/Help.jsx";
 
@@ -22,7 +22,7 @@ function Content() {
                     <Routes location={location}>
                         <Route exact path="/" element={<Home />} />
                         <Route path="/About" element={<About />} />
-                        <Route path="/History" element={<History />} />
+                        <Route path="/Educate" element={<Educate />} />
                         <Route path="/Resources" element={<Resources />} />
                         <Route path="/Help" element={<Help />} />
                     </Routes>

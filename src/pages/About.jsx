@@ -1,48 +1,51 @@
 import "./About.css"
 
-import img1 from "../pics/04.jpg"
-import img2 from "../pics/05.jpg"
-
-function Summary() {
+function About() {
     return (
-        <div className="wrapper">
-            <div className="about-info-wrapper">
-                <div id="about-info1">
-                    <img src={img1} />
-                    <div className="text">
-                        <h2>What is Anti-Asian Hate?</h2>
-                        <p>
-                            With the recent effects of COVID-19, the world has been put under major 
-                            amounts of distress. From being forced to stay indoors all day, to even 
-                            causing millions of deaths around the world, COVID-19 has definitely caused 
-                            a lot of mishaps within humanity. Having originated from China, many members 
-                            of society have placed unjustified blame and hate upon people of Chinese 
-                            descent, or even people who just “look Chinese”, resulting in a worldwide 
-                            xenophobia of the AAPI community. This unrightful hate and blame placed 
-                            upon these people have resulted in many instances of harm against innocent 
-                            people, either associated or part of this community.
-                        </p>
-                    </div>
+        <div className="about">
+            <div className="text-container">
+                <div id="values" className="about-info">
+                    <h1>Our Values</h1>
+                    <ul>
+                        <li>
+                        <h2>FREEDOM</h2>
+                        <p>The Asian community, and many other communities have been systematically oppressed for years without end. Because of this, Asian Awareness values the freedom that these communities deserve.</p>
+                        </li>
+                        <li>
+                        <h2>SAFETY</h2>
+                        <p>Asian Awareness believes in the safety of all allues, no matter their religion, culture, ethnicity, or background.</p>
+                        </li>
+                    </ul>
                 </div>
 
-                <div id="about-info2">
-                    <div className="text">
-                        <h2>The Effects of Xenophobia Against the Asian Voice.</h2>
-                        <p>
-                            As stated before, the rise of worldwide xenophobia against the Asian community is heavily 
-                            damaging many innocent lives. Because of this increase of hate, 
-                            members of the Asian community are having their voices silenced, having less say in their workplaces,
-                            being denied services, being avoided, and more, all due to their race or ethnicity. When taking into 
-                            consideration the horrible state of misogynistic, prejudical, transphobic, and homophobic behaviours in 
-                            today's society, those who not only are Asian but identify within many other minority communities experience
-                            even more restrictions on their voices and privileges. 
-                        </p>
-                    </div>
+                <span className="divider" />
+
+                <div id="what-we-do" className="about-info">
+                    <h1>How we Help?</h1>
+                    <ul>
+                        <li><h2>SPREADING AWARENESS</h2>
+                        <p>Here at Asian Awareness, we believe that the best way to stop Anti-Asian hate is by spreading awareness about society's wrong-doings, leading people into making the better and right choices when it comes to respecting others.</p></li>
+                        <li><h2>EDUCATING OTHERS</h2>
+                        <p>Asian Awareness willingly goes out of their way to host community-friendly events that help educate others about Asian cultures in order to develop a mutual understanding between the Asian community and the world.</p></li>
+                        <li><h2>GIVING A VOICE TO THOSE IN NEED</h2>
+                        <p>We know that Anti-Asian hate, especially in this time and age, can make things very difficult to speak out about. Asian Awareness aims to subvert and defend fellow allies from all the hate and negativity that people's voices may face, giving the proper protected speaking pedestal that everyone deserves.</p></li>
+                    </ul>
+                </div>
+
+                <span className="divider" />
+
+                <div id="volunteer">
+                    <h1>Think you can help out? Reach out below.</h1>
+                    <ul>
+                        <li><h2>@asianawareness on Instagram</h2></li>
+                        <li><h2>+1 (800) 123 4567</h2></li>
+                        <li><h2>asianawareness@asianawareness.com</h2></li>
+                    </ul>
                 </div>
             </div>
-        </div>
 
+        </div>
     )
 }
 
-export default Summary;
+export default About;

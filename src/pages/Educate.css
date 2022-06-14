@@ -1,0 +1,49 @@
+.educate {
+    display: inline block;
+}
+
+.heading {
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    display: table;
+}
+
+.headingbg {
+    position: absolute;
+    filter: grayscale(90%) brightness(70%);
+    width: 100%;
+    height: 40vh;
+    z-index: -1;
+    background-image: url("../pics/stop-asian-hate1.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heading h1 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 3vw;
+}
+
+.text p {
+    padding-top: 2vw;
+    height: 50vh;
+    font-size: 1.2vw;
+    line-height: 2vw;
+    width: 70%;
+    margin: auto;
+}
+
+
+
+.history {
+    padding-top: 2.5vw;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #f6f6f6;
+}

@@ -11,6 +11,8 @@
     background-color: white;
     z-index: 9999;
     border-bottom: 1px solid gray;
+    box-shadow: black 0px 0px 0px;
+    transition: 600ms ease-in-out;
 }
 
 .navList {
@@ -34,10 +36,10 @@
 
 .navBrand:hover, .navItem:hover {
     filter: invert(40%);
-    transition: 150ms ease-in-out;
+    transition: 300ms ease-in-out;
 }
 
 .navbar.shadow {
     box-shadow: black 5px 3px 16px;
-    transition: 300ms ease-in-out;
+    transition: 600ms ease-in-out;
 }

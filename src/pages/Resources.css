@@ -1,0 +1,49 @@
+.resources-info ol li a {
+    color: blue;
+    font-size: 2.4vh;
+}
+
+.resources-info ol li a:hover {
+    color: rgb(65, 130, 151);
+}
+
+.resources-info ol li::marker {
+    font-size: 2.4vh;
+}
+
+.resources-info ol li {
+    margin-bottom: 1vw;
+}
+
+.resources-info ol {
+    padding-left: 0;
+    list-style-position: inside;
+    text-align: left;
+}
+
+.resources-info h1 {
+    font-size: 3.4vh;
+}
+
+.info-container {
+    float: center;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+.img-container img {
+    height: 80vh;
+    float: right;
+}
+
+.resources p {
+    font-size: 2vh;
+    display: table;
+}
+
+.resources {
+    padding-top: 3vh;
+    width: 65%;
+    margin: auto;
+}

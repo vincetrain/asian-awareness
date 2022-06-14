@@ -1,0 +1,14 @@
+#heading {
+    display: table;
+    background-color: black;
+    height: 30vh;
+    width: 100%;
+    color: white;
+}
+
+h1 {
+    display: table-cell;
+    font-size: 4vw;
+    vertical-align: middle;
+    text-align: center;
+}
