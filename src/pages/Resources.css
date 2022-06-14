@@ -5,6 +5,7 @@
 
 .resources-info ol li a:hover {
     color: rgb(65, 130, 151);
+    transition: 400ms ease-in-out;
 }
 
 .resources-info ol li::marker {
@@ -46,4 +47,5 @@
     padding-top: 3vh;
     width: 65%;
     margin: auto;
+    padding-bottom: 7vh;
 }

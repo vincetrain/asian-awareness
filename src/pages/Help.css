@@ -1,14 +1,48 @@
-#heading {
-    display: table;
-    background-color: black;
-    height: 30vh;
-    width: 100%;
-    color: white;
-}
-
-h1 {
-    display: table-cell;
+.help h1 {
     font-size: 4vw;
     vertical-align: middle;
     text-align: center;
+}
+
+.help ul {
+    color: white;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.help #awareness {
+    display: table;
+    width: 100%;
+    background-color: black;
+    height: 30.3vh;
+}
+
+.help #education {
+    display: table;
+    width: 100%;
+    background-color: black;
+    height: 30.3vh;
+}
+
+.help #report {
+    display: table;
+    width: 100%;
+    background-color: black;
+    height: 30.3vh;
+}
+
+.help p {
+    margin: auto;
+    width: 65%;
+    color: grey;
+    margin-top: -2vw;
+    text-align: center;
+}
+
+.help ul li:hover {
+    filter: invert(100%);
+    transition: 400ms ease-in-out;
 }

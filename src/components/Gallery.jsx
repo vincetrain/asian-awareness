@@ -43,7 +43,7 @@ function Gallery(props) {
         <div className="gallery">
             <TransitionGroup>
                 <CSSTransition key={index} classNames="slide" timeout={400}>
-                    <img src={picList[index]} />
+                    <img src={picList[index]}/>
                 </CSSTransition>
             </TransitionGroup>
         </div>

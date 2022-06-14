@@ -1,8 +1,12 @@
 import "./About.css"
+import Logo from "../components/Logo.jsx";
 
 function About() {
     return (
         <div className="about">
+            <div id="heading">
+                <Logo className="logo" />
+            </div>
             <div className="text-container">
                 <div id="values" className="about-info">
                     <h1>Our Values</h1>

@@ -1,0 +1,19 @@
+.timelineContainer {
+    display: flex;
+    justify-content: center;
+    margin-left: 5vw;
+    align-items: center;
+}
+
+.timeline {
+    display: inline-block;
+    margin: auto;
+    width: 100vw;
+
+}
+
+.timelineBar {
+    fill: green;
+    stroke: black;
+    stroke-width: 3px;
+}
